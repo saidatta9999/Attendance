@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Success</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .popup {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .popup h2 {
+            font-size: 2rem;
+            color: #a5ffb0;
+            margin-bottom: 15px;
+        }
+
+        .popup p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .popup p strong {
+            color: #fffbeb;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 28px;
+            background: #00bcd4;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0097a7;
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <h2>Attendance Recorded ✅</h2>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>User ID:</strong> {{ user_id }}</p>
+        <p>Your attendance has been marked successfully for today.</p>
+        <a href="/"><button class="btn">Back to Home</button></a>
+    </div>
+</body>
+</html>
